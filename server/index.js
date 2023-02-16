@@ -8,7 +8,7 @@ const server = http.createServer(app);
 
 const port = process.env.PORT;
 
-app.use(cors);
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("<h1>Server Works Properly</h1>");
